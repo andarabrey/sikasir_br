@@ -18,6 +18,7 @@ class CreateMenusTable extends Migration
             $table->string('nama', 50);
             $table->smallInteger('harga');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
